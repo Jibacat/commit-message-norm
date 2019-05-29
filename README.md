@@ -100,7 +100,7 @@ echo 'module.exports = {extends: ["@commitlint/config-conventional"]};' > ./comm
 
 ### 1. type
 
-约定了`feat`、`fix`两个`主要type`，以及docs、style、build、refactor、revert五个`特殊type`，其余type暂不使用。
+约定了`feat`、`fix`两个`主要type`，以及docs、style、build、refactor、revert五个`特殊type`，其余type暂不使用。
 ```
 # 主要type
 feat:     增加新功能
@@ -124,7 +124,7 @@ chore:    不修改src或者test的其余修改
 
 ### 2. scope
 
-约定scope也为必填项，用于描述改动的范围，格式为项目名/模块名，例如：
+约定scope也为必填项，用于描述改动的范围，格式为项目名/模块名，例如：
 `node-pc/common` `rrd-h5/activity`，而`we-sdk`不需指定模块名。
 如果修改多个模块，则需拆分成多次commit。
 
@@ -136,7 +136,7 @@ body一般场景不作要求，但是重大需求、更新等必须添加body来
 涉及break changes的改动必须指明该项，类似接口参数减少、接口删除、迁移等。
 
 ### 5. affect issues
-需打通jira与gitlab。
+需打通jira与gitlab。
 参考文档：https://docs.gitlab.com/ee/user/project/integrations/jira.html
 
 ## 补充
